@@ -2,7 +2,9 @@ var connect = require('connect');
 var serveStatic = require('serve-static');
 var path = require('path')
 
+const PORT = process.env.PORT || 5000
+
 connect().use(serveStatic(path.join(__dirname, 'dist'),
-     {'index': ['index.html']})).listen(5000, function(){
-    console.log('Server running on 5000...');
+     {'index': ['index.html']})).listen(PORT, function(){
+    console.log(`Server running on ${PORT}...`);
 });
