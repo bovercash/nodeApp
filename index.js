@@ -3,6 +3,6 @@ var serveStatic = require('serve-static');
 var path = require('path')
 
 connect().use(serveStatic(path.join(__dirname, 'dist'),
-     {'index': ['index.html']})).listen(3000, function(){
-    console.log('Server running on 3000...');
+     {'index': ['index.html']})).listen(5000, function(){
+    console.log('Server running on 5000...');
 });
