@@ -1,0 +1,6 @@
+{
+    "name": "Simple App",
+    "description": "Simple test of Heroku with Node",
+    "repository": "https://github.com/bovercash/nodeApp",
+    "image": "heroku/nodejs"
+  }
